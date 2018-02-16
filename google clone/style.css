@@ -1,0 +1,140 @@
+/* global */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+ul {
+  font-weight: 200;
+  font-size: 1em;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 12em
+}
+.hleft ul, .hright ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hleft ul li {
+  margin-left: 1.5em;
+}   
+.hright ul li {
+  margin-right: 1.5em;
+}
+    
+.hright img{
+  width: 15px;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+.hright button {
+  font-weight: bold;
+  background: #4285f4;
+  background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+  height: 30px;
+  color: whitesmoke;
+}
+
+/* main search body */
+.search-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.search-container img {
+  width: 23em;
+  margin-bottom: 2em;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container  img {
+  position: absolute;
+  width: 18px;
+  right: 30px;
+  top: 8px;
+}
+
+.search-container input {
+  width: 580px;
+  max-width: 90vw;
+  background: #fff;
+  height: 39px;
+  border: solid .5px #F5F5F5;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1em;
+  font-size:16px;
+}
+
+.search-buttons button{
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 25px 4px;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  padding: .5em 0;
+}
+
+.fleft ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fleft ul, .fright ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-self:flex-end;
+  padding: .2em 0;
+}
+
+.fleft ul li , .fright ul li {
+  display: inline-block;
+}
+.fleft ul li {
+  margin-left: 1.5em;
+}   
+.fright ul li {
+  margin-right: 1.5em;
+}
+
+/* sticky footer */
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}

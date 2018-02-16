@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Demo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+  <script>
+    /* hamburger menu toggle script */
+    window.onload = function initFunc() {
+      document.querySelector("nav .toggleNav").addEventListener("click", toggleActive);
+    };
+    function toggleActive() {
+      console.log("hi");
+      document.querySelector("nav ul").classList.toggle("active");
+
+    };
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1> Welcome to Flexbox Land</h1>
+    </header>
+    <nav>
+      <a class="toggleNav">Menu &#9776;</a>
+      <ul classs="menu-items">
+        <li><a href=""> Item 1</a></li>
+        <li><a href=""> Item 2</a></li>
+        <li><a href=""> Item 3</a></li>
+        <li><a href=""> Item 4</a></li>
+        <li><a href=""> Item 5</a></li>
+        <li><a href=""> Item 6</a></li>
+        <li class="social"><a href="google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/> </a></li>
+        <li class="social"><a href="google.com"><img src="https://4blktk3t8vnl4duok53i8t5k-wpengine.netdna-ssl.com/wp-content/uploads/2015/07/Linkedin-icon-300x300.png"/> </a></li>
+        <li class="social"><a href="google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Twitter_font_awesome.svg"/> </a></li>
+        <li class="social"><a href="google.com"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png"/> </a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="hero"> </div>
+      <div class="gallery">
+        <div class="gallery-header">
+          <h1>Gallery</h1>
+        
+        </div>
+        <div class="flexbox-grid">
+          <ul>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Iranian_Shia_Mosque%2C_Dubai%2C_UAE_%284324609002%29.jpg" />
+            </li>
+            <li>
+              <img src="https://farm2.staticflickr.com/1238/1268083730_3df2655070_z.jpg" />
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Borujerdi_House_-_kashan_-_Iran_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%8C_%DA%A9%D8%A7%D8%B4%D8%A7%D9%86%D8%8C_%D8%AE%D8%A7%D9%86%D9%87_%D8%A8%D8%B1%D9%88%D8%AC%D8%B1%D8%AF%DB%8C_%D9%87%D8%A7_09.jpg" />
+            </li>
+            <li>
+              <img src="https://farm9.staticflickr.com/8104/8649546774_6d6aa8eab9_z.jpg" />
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/%D8%AE%D8%A7%D9%86%D9%87_%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C_%D8%B9%D8%A7%D9%85%D8%B1%DB%8C_%D9%87%D8%A7_%D8%AF%D8%B1_%D8%B4%D9%87%D8%B1_%DA%A9%D8%A7%D8%B4%D8%A7%D9%86_%C4%80meri_House_-_kashan_city-_Iran_country_06.jpg" />
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Music_Room%2C_Ali_Qapu_Palace%2C_Isfahan%2C_Iran_%281267169451%29.jpg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h1>This is a cool sticky footer</h1>
+    </footer>
+  </div>
+</body>
+</html>
