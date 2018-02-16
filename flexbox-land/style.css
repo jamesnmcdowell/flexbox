@@ -16,17 +16,17 @@ body {
   color: whitesmoke;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Aldrich', sans-serif;
-  font-family: 'Michroma', sans-serif;
   font-family: 'Aladin', cursive;
-
   font-size: 12px;
   background: #794b9e;
   background: linear-gradient(to right, #794b9e 37%, #6bdae0 92%);
 }
-h1 {
+p, li {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+h1 {  
   font-weight: 400;
   letter-spacing: 1.5px;
   font-size: 3em;
@@ -47,6 +47,17 @@ a {
 
 a:hover {
   background-color: rgba(0, 0, 0, .4);
+}
+
+hr.gradientdark {
+    border: 0;
+    height: 1px;
+    margin: 0;
+    color: #ffffff;
+    width: 60%;
+    text-align:center; 
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .wrapper {
@@ -129,6 +140,56 @@ nav ul .social {
   margin: 2em 0;
 }
 
+/*packages */
+
+.package-header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .2);
+}
+.packages-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 0;
+  justify-content: space-between;
+}
+.packages-grid li {
+  padding: 0;
+  margin: .5em 0;
+}
+.packages-grid ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.package { 
+  padding: 2em;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, .2);
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-between;
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+.package h2 {
+  font-size: 2em;
+}
+.package > * {
+  flex: 1 1 100%;
+  text-align: center;
+}
+.package .price {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.package .cta, .price {
+  align-self: flex-end;
+}
+
 /* gallery */
 
 .gallery-header {
@@ -188,7 +249,32 @@ footer h1 {
     flex: 0 0 calc(100%/2 - 8px);
     margin-bottom: 15px;
   }
+  .package1, .package2 {
+    flex: 0 0 calc(100%/2 - 10px);
+    
+  }
+  .package3 {
+    
+    
+  }
 
+}
+@media (min-width: 800px) {
+  .packages-grid {
+    display: flex;
+  }
+  .package {
+    flex: 0 0 calc(100%/3 - 10px);
+  }
+  .package1, .package2 {
+    
+  }
+  .package3 {
+    
+    
+  }
+  
+  
 }
 
 @media (min-width: 1000px) {
